@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<link rel="stylesheet" href="">
+</head>
+<body>
+
+                <!--        navbar              -->
+
+
+
+
+  <nav class="bg-white mt-6 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                         
+                          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Astro<span class="text-xl font-normal text-gray-400 ">ship</span></span>
+                      </a>
+                      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                          <span class="sr-only">Open main menu</span>
+                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                          </svg>
+                      </button>
+
+                      <div class="hidden w-full md:block md:w-auto " id="navbar-dropdown">
+                        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+                          <li>
+                              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-center text-gray-400 w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto dark:text-white md:dark dark:focus:text-white dark:border-gray-700  md:dark:hover:bg-transparent">Features <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg></button>
+                              <!-- Dropdown menu -->
+                              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                    <div class=""><li>
+                                      <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:hover:text-white">Action</a>
+                                    </li>
+                                    <li>
+                                      <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-400 dark:hover:text-white">Dropdown Submenu</a>
+                                    </li>
+                                    <li>
+                                      <a href="error.html" class="block px-4 py-2 text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">404 Page</a>
+                                    </li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                            <a href="Pricing.html" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                          </li>
+                          <li>
+                            <a href="about.html" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                          </li>
+                          <li>
+                            <a href="blog.html" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                          </li>
+                           <li>
+                            <a href="contact.html" class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                          </li> </div>
+                          <div class="">
+                            <button type="button" class=" ml-5 me-5 mb-2 text-base font-medium  text-gray-600 focus:outline-none bg-white   focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href="#">Log in</a></button>
+                            <button type="button" class=" text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-6 py-3.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"><a href="#">Sign up</a></button> 
+                            </div>
+
+                        
+                          
+
+
+                        </ul>
+                      </div>
+                    
+                    </div>
+
+                    
+   </nav>
+                  
+
+
+
+<!--                                                           -->
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="max-w-screen-xl mx-auto px-5">  <div class="mt-16 text-center"> <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight"> Our Blog </h1>
+     <p class="text-lg mt-4 mb-10 text-gray-400"> 
+    We write about building startups and thoughts going on our mind.
+     </p> </div> <br>
+     
+     
+     <main class="mt-16"> <ul class="grid gap-16 max-w-4xl mx-auto"> <li> <a href="#"> <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center"> <picture> <source srcset="https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&amp;fit=crop&amp;w=430&amp;h=240" type="image/webp" sizes="(max-width: 800px) 100vw, 800px"> <img src="https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&amp;fit=crop&amp;w=430&amp;h=240" alt="data structures &amp; algorithms" sizes="(max-width: 800px) 100vw, 800px" loading="eager" decoding="sync" class="w-full rounded-md object-cover object-center bg-white" width="800" height="600"> </picture>
+        
+        <div> <span class="text-blue-400 uppercase tracking-wider text-sm font-medium"> Courses </span>
+            
+            
+            <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">  Introduction to the Essential Data Structures &amp; Algorithms </h2> <div class="flex gap-2 mt-3"> <span class="text-gray-400"> Marcell Ziemann </span> <span class="text-gray-400">• </span> <time class="text-gray-400" datetime="2022-11-09T16:39:00.000Z"> Wed Nov 09 2022 </time> </div> </div> </div> </a> </li>
+        
+        <li> <a href="#"> 
+            
+            <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center"> <picture> <source srcset="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&amp;fit=crop&amp;w=430&amp;h=240" type="image/webp" sizes="(max-width: 800px) 100vw, 800px"> <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&amp;fit=crop&amp;w=430&amp;h=240" alt="full stack web development" sizes="(max-width: 800px) 100vw, 800px" loading="eager" decoding="sync" class="w-full rounded-md object-cover object-center bg-white" width="800" height="600"> </picture> <div> <span class="text-blue-400 uppercase tracking-wider text-sm font-medium"> Tutorials </span> <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 "> The Complete Guide to Full Stack Web Development </h2> <div class="flex gap-2 mt-3"> <span class="text-gray-400"> Janette Lynch </span> <span class="text-gray-400">• </span> <time class="text-gray-400" datetime="2022-11-08T11:39:00.000Z"> Tue Nov 08 2022 </time> </div> </div> </div> </a> </li><li> <a href="#"> <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center"> <picture> <source srcset="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&amp;fit=crop&amp;w=430&amp;h=240" type="image/webp" sizes="(max-width: 800px) 100vw, 800px"> <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&amp;fit=crop&amp;w=430&amp;h=240" alt="frontend master" sizes="(max-width: 800px) 100vw, 800px" loading="eager" decoding="sync" class="w-full rounded-md object-cover object-center bg-white" width="800" height="600"> </picture> <div> <span class="text-blue-400 uppercase tracking-wider text-sm font-medium"> Tutorials </span> <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 "> How to become a Frontend Master </h2> <div class="flex gap-2 mt-3"> <span class="text-gray-400"> Connor Lopez </span> <span class="text-gray-400">• </span> <time class="text-gray-400" datetime="2022-11-07T15:39:00.000Z"> Mon Nov 07 2022 </time> </div> </div> </div> </a> </li><li> <a href="#"> <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center"> <picture> <source srcset="https://images.unsplash.com/photo-1542393545-10f5cde2c810?&amp;fit=crop&amp;w=430&amp;h=240" type="image/webp" sizes="(max-width: 800px) 100vw, 800px"> <img src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?&amp;fit=crop&amp;w=430&amp;h=240" alt="typography" sizes="(max-width: 800px) 100vw, 800px" loading="lazy" decoding="async" class="w-full rounded-md object-cover object-center bg-white" width="800" height="600"> </picture> <div> <span class="text-blue-400 uppercase tracking-wider text-sm font-medium"> Technology </span> <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 "> Typography Example Post </h2> <div class="flex gap-2 mt-3"> <span class="text-gray-400"> Charles North </span> <span class="text-gray-400">• </span> <time class="text-gray-400" datetime="2022-11-05T15:36:00.000Z"> Sat Nov 05 2022 </time> </div> </div> </div> </a> </li> </ul> </main>  </div>
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+
+    <!--                    Footer                               -->
+
+<br>
+<footer class="my-20"> <p class="text-center text-sm text-gray-500">
+  Copyright © 2024 Astroship. All rights reserved.
+  </p><p class="text-center text-xs text-gray-400 mt-1">
+  Made by <a href="#" target="_blank" rel="noopener" class="hover:underline">
+  Web3Templates
+  </a> </p>
+
+<br>
+<br>
+<br>
+<br>
+</footer>
+
+
+</body>
+</html>
